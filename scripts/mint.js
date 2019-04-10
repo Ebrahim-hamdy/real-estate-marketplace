@@ -7,20 +7,14 @@ const ABI = contract.abi;
 
 const MNEMONIC = process.env.METAMASK_SEED;
 const INFURA_KEY = process.env.INFURA_KEY;
+const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
 const OWNER_ADDRESS = process.env.OWNER_ADDRESS;
-
-console.log("mnemonic:" + MNEMONIC);
-console.log("infura key:" + INFURA_KEY);
-console.log("owner address:" + OWNER_ADDRESS);
-console.log("contract address:" + CONTRACT_ADDRESS);
 
 const provider = new HDWalletProvider(
   MNEMONIC,
   `https://rinkeby.infura.io/v3/${INFURA_KEY}`
 );
 const web3Instance = new web3(provider);
-
-
 
 const proofs = [
   require("./proofs/proof-1"),
@@ -31,12 +25,12 @@ const proofs = [
 ];
 
 (async function() {
-  if(!MNEMONIC || !INFURA_KEY || !OWNER_ADDRESS || !CONTRACT_ADDRESS) {
-    console.log('please enter all fields');
+  if (!MNEMONIC || !INFURA_KEY || !OWNER_ADDRESS || !CONTRACT_ADDRESS) {
+    console.log("please enter all fields");
     return;
   }
   this.accounts = await web3Instance.eth.getAccounts();
-  //console.log(this.accounts);
+
   const contract = new web3Instance.eth.Contract(ABI, CONTRACT_ADDRESS, {
     gasLimit: "1000000"
   });
@@ -64,7 +58,5 @@ const proofs = [
     } catch (error) {
       console.log(error.toString());
     }
-
-    // console.log("Minted Transaction", minted);
   });
 })();
