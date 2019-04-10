@@ -1,0 +1,44 @@
+{
+  "proof": {
+    "A": [
+      "0x26df4c01f1029a5a768cdbcc5c90441d4f8c5f2147f909628b0863c941cd2cb3",
+      "0x198fbc8ed79b88a91ceeb7c4de4caccb45421dee797e7226bbcc5ad43b626572"
+    ],
+    "A_p": [
+      "0x13cfb72a0f6b89f6873224ff51d1937a9190fbf9461a6ca0e2f466d14fc81daa",
+      "0xc2abb949d1c624a07eb5fa02dc8ef3d4ee2600becb64354c6efb98d75976e82"
+    ],
+    "B": [
+      [
+        "0x290099d4993c271ec632f2944f6b440b73db6debc1b52d2124dc44cf1bee0e9d",
+        "0x86afca3c5a0611e37434e8679f4a259f455a0526cb369ed01d3f9148beecbe1"
+      ],
+      [
+        "0x2cf4a2b11bcc08658d9cf51388a0865b5a70170f9746a6fd568a2ee8a88018ea",
+        "0x14f33b2bc890c7988e22f65a8ca2feb5d621a6a4103be95bb1f32f6082156f11"
+      ]
+    ],
+
+    "B_p": [
+      "0x16053398a9fb4fc04c5af0cfc08d6ec620a7b7eaef62cd2ad472196fd3bb5276",
+      "0x11ff7e6ea404380d48727f401770bf32430e869aed0b008121144efebce33d9c"
+    ],
+    "C": [
+      "0x62c5f40543b4b9c2d1b1958dba0ce036e460761f1c0f84ed576f4d3efe2938f",
+      "0x260ab40856b87ba00621c7365d8495494337a9b677cfaf30ac047e3a317ec7be"
+    ],
+    "C_p": [
+      "0x203c67392c1ec356c878e4903910772ae48e2354e14122b65b11cba07c52d620",
+      "0x12e3b72f91581f5412d5fdf2bd9c5db25fa02a9888bee56bbc10cd2a69dad8ae"
+    ],
+    "H": [
+      "0x44fc4040cfce94b0897793a8ad94ff85e610241ecfb11508117eb1c2dfa9de4",
+      "0x2d8e1e099b3b11cb60a30f658e2489c5906be57b08bbabc3d4badb25dd558fd1"
+    ],
+    "K": [
+      "0x8d511294a6631c4bacc34115012c18b70e442e154b24b64dd8dd98daabcebf0",
+      "0x2186a15a699a3235e29b26d15986d0c5aacd771702c0f59a76ee4ee32f87e4b1"
+    ]
+  },
+  "input": [9, 1]
+}
