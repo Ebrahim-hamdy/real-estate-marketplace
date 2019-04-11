@@ -26,7 +26,9 @@ add your .env file with METAMASK_SEED, INFURA_KEY, CONTRACT_ADDRESS, OWNER_ADDRE
 ## Addresses
 OpenSea Marketplace Storefront: (https://rinkeby.opensea.io/recent/transferrealestatev4)
 
-Contract Address: 0x3A016834E5676dABfF1A6b25b32459f4DC5F310f
+Contract Address: 0xb39ECC8b16A819AE017818193A210181495c67ED
+
+Verifier Address: 0xdbd0C15bbbF48FFff66B751bF7709f36B2Aca563
 
 # Project Resources
 

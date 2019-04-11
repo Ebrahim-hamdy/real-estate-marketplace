@@ -35,5 +35,50 @@ contract("SolnSquareVerifier", accounts => {
         { from: account_one }
       );
     });
+
+    // Test that a new solution cannot be added if the proof was used previously
+    it("Token can't be minted for contract with same solution", async function() {
+      let isMinted = false;
+
+      await this.contract.mintNewNft(
+        0,
+        account_one,
+        proof.A,
+        proof.A_p,
+        proof.B,
+        proof.B_p,
+        proof.C,
+        proof.C_p,
+        proof.H,
+        proof.K,
+        input,
+        { from: account_one }
+      );
+
+      try {
+        await this.contract.mintNewNft(
+          0,
+          account_one,
+          proof.A,
+          proof.A_p,
+          proof.B,
+          proof.B_p,
+          proof.C,
+          proof.C_p,
+          proof.H,
+          proof.K,
+          input,
+          { from: account_one }
+        );
+      } catch (error) {
+        isMinted = true;
+      }
+
+      assert.equal(
+        isMinted,
+        true,
+        "New solution cannot be added if the proof was used previously"
+      );
+    });
   });
 });
